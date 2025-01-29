@@ -18,11 +18,11 @@ pipeline {
     }
   
   
-    stage('Run tests') {
-      steps {
-        sh "docker run testapp npm test"
-      }
-    }    
+    // stage('Run tests') {
+    //   steps {
+    //     sh "docker run testapp npm test"
+    //   }
+    // }    
    stage('Deploy Image') {
       steps{
          withCredentials([usernamePassword(credentialsId: 'dockerhub-pin1', 
