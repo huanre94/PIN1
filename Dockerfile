@@ -4,7 +4,7 @@ WORKDIR /app
 
 ADD package.json package-lock.json /app/
 RUN npm install
-# RUN chmod +x ./node_modules/.bin/mocha
+RUN chmod +x ./node_modules/.bin/mocha
 
 EXPOSE 3000
 
