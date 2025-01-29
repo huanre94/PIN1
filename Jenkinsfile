@@ -29,8 +29,8 @@ pipeline {
                                              usernameVariable: 'DOCKER_USER', 
                                              passwordVariable: 'DOCKER_PASS')]) {
         sh '''
-        docker tag testapp 127.0.0.1:5000/mguazzardo/testapp
-        docker push 127.0.0.1:5000/mguazzardo/testapp   
+        docker tag testapp 127.0.0.1:5000/huanre94/testapp
+        docker push 127.0.0.1:5000/huanre94/testapp   
         '''
         }
         }
